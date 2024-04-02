@@ -1,5 +1,5 @@
 {
-  "name": "@richkode/ui",
+  "name": "@richkode/salt",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -7,11 +7,11 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/ui/ui.esm.js",
+  "unpkg": "dist/salt/salt.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/ui/ui.esm.js",
-      "require": "./dist/ui/ui.cjs.js"
+      "import": "./dist/salt/salt.esm.js",
+      "require": "./dist/salt/salt.cjs.js"
     },
     "./my-component": {
       "import": "./dist/components/my-component.js",
