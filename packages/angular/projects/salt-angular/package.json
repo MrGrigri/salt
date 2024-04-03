@@ -2,6 +2,7 @@
   "name": "@richkode/salt-angular",
   "private": false,
   "version": "0.0.1",
+  "types": "./index.d.ts",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0",
