@@ -2,7 +2,10 @@
   "name": "@local/root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/angular/",
+    "packages/angular/projects/salt-angular/",
+    "packages/salt/",
+    "apps/*"
   ],
   "devDependencies": {
     "@types/node": "^20.12.3",
