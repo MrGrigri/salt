@@ -3,5 +3,6 @@
   "dest": "../../dist/salt-angular",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": ["@richkode/salt"]
 }
