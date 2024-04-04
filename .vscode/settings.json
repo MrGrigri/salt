@@ -1,3 +1,5 @@
 {
-  "cSpell.words": ["fileoverview"]
+  "cSpell.words": ["fileoverview"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

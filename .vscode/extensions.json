@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "nrwl.angular-console",
+    "kgston.stencil",
+    "angular.ng-template",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode"
+  ]
+}
