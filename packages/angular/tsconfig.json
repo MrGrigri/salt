@@ -15,7 +15,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "paths": {
-      "salt-angular": ["./dist/salt-angular"]
+      "@richkode/salt": ["../salt/dist/"],
+      "@richkode/salt/loader": ["../salt/loader"],
+      "@richkode/salt-angular": ["./dist/salt-angular/"]
     },
     "importHelpers": true,
     "target": "ES2022",
