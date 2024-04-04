@@ -9,4 +9,4 @@
  */
 
 export { format } from './utils/utils';
-export { Components, JSX } from './components';
+export * from './components';
