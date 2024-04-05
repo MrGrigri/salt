@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve angular-web",
+    "start:angular-web": "ng serve --project angular-web",
+    "start:angular-web-standalone": "ng serve --project angular-web-standalone",
     "build": "ng build",
     "build:salt-angular": "ng build salt-angular",
     "build:salt-angular:prod": "ng build salt-angular --configuration=production",
