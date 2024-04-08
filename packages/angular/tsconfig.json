@@ -17,6 +17,8 @@
     "paths": {
       "@richkode/salt": ["../salt/dist/"],
       "@richkode/salt/loader": ["../salt/loader"],
+      "@richkode/salt/components": ["../salt/dist/components"],
+      "@richkode/salt/components/*": ["../salt/dist/components/*"],
       "@richkode/salt-angular": ["./dist/salt-angular/"]
     },
     "importHelpers": true,
