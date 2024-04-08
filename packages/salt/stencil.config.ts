@@ -1,8 +1,13 @@
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { Config } from '@stencil/core';
+import { fixAngularStandaloneComponents } from './scripts/fix-angular-standalone-components';
+
+const Scope = '@richkode';
+const Namespace = 'salt';
+const AngularLib = 'angular/projects/salt-angular/src/lib';
 
 export const config: Config = {
-  namespace: 'salt',
+  namespace: Namespace,
   outputTargets: [
     {
       type: 'dist',
@@ -21,10 +26,20 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     angularOutputTarget({
-      componentCorePackage: '@richkode/salt',
+      componentCorePackage: `${Scope}/${Namespace}`,
       outputType: 'component',
-      directivesProxyFile: '../angular/projects/salt-angular/src/lib/stencil-generated/components.ts',
-      directivesArrayFile: '../angular/projects/salt-angular/src/lib/stencil-generated/index.ts',
+      directivesProxyFile: `../${AngularLib}/stencil-generated/components.ts`,
+      directivesArrayFile: `../${AngularLib}/stencil-generated/index.ts`,
+    }),
+    angularOutputTarget({
+      componentCorePackage: `${Scope}/${Namespace}`,
+      outputType: 'standalone',
+      directivesProxyFile: `../${AngularLib}/stencil-generated-standalone/components.ts`,
+      directivesArrayFile: `../${AngularLib}/stencil-generated-standalone/index.ts`,
+    }),
+    fixAngularStandaloneComponents({
+      componentCorePackage: `${Scope}/${Namespace}`,
+      directivesProxyFile: `../../${AngularLib}/stencil-generated-standalone/components.ts`,
     }),
   ],
   testing: {
