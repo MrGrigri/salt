@@ -19,7 +19,8 @@
       "@richkode/salt/loader": ["../salt/loader"],
       "@richkode/salt/components": ["../salt/dist/components"],
       "@richkode/salt/components/*": ["../salt/dist/components/*"],
-      "@richkode/salt-angular": ["./dist/salt-angular/"]
+      "@richkode/salt-angular": ["./dist/salt-angular/"],
+      "@richkode/salt-angular-standalone": ["./dist/salt-angular-standalone/"]
     },
     "importHelpers": true,
     "target": "ES2022",
