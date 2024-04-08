@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZo
 
 import { ProxyCmp } from './angular-component-lib/utils';
 
-/* Import rewritten by fixAngularStandaloneComponents */
+/* Import rewritten by fixAngularStandaloneComponents */ 
 import type { Components } from '@richkode/salt';
 
 import { defineCustomElement as defineMyComponent } from '@richkode/salt/components/my-component.js';
