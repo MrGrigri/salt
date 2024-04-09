@@ -21,7 +21,8 @@
   },
   "files": [
     "dist/",
-    "loader/"
+    "loader/",
+    "hydrate/"
   ],
   "scripts": {
     "build": "rm -rf ./dist ./loader && stencil build",

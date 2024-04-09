@@ -4,6 +4,7 @@
   "workspaces": [
     "packages/angular/",
     "packages/angular/projects/salt-angular/",
+    "packages/angular/projects/salt-angular-standalone/",
     "packages/salt/",
     "apps/*"
   ],
