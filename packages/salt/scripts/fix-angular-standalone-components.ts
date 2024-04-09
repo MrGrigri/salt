@@ -21,7 +21,7 @@ const runFixAngularStandaloneComponents = async (options: FixAngularStandaloneCo
   console.log('Imports were rewritten.');
 };
 
-export const fixAngularStandaloneComponents = (options: FixAngularStandaloneComponentsOptions): OutputTarget => ({
+export const _fixAngularStandaloneComponents = (options: FixAngularStandaloneComponentsOptions): OutputTarget => ({
   name: 'fix-angular-standalone-components',
   type: 'custom',
   generator: async (_config: Config, compilerCtx: CompilerCtx) => {

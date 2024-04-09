@@ -1,6 +1,6 @@
 import { angularOutputTarget } from '@stencil/angular-output-target';
 import { Config } from '@stencil/core';
-import { fixAngularStandaloneComponents } from './scripts/fix-angular-standalone-components';
+import { _fixAngularStandaloneComponents } from './scripts/fix-angular-standalone-components';
 
 const Scope = '@richkode';
 const Namespace = 'salt';
@@ -23,8 +23,11 @@ export const config: Config = {
       type: 'docs-readme',
     },
     {
-      type: 'www',
-      serviceWorker: null, // disable service workers
+      type: 'docs-vscode',
+      file: '../../.vscode/salt-components.json',
+    },
+    {
+      type: 'dist-hydrate-script',
     },
     // Angular Module Library
     angularOutputTarget({
@@ -40,7 +43,7 @@ export const config: Config = {
       directivesProxyFile: `../${AngularStandaloneLib}/components.ts`,
       directivesArrayFile: `../${AngularStandaloneLib}/index.ts`,
     }),
-    fixAngularStandaloneComponents({
+    _fixAngularStandaloneComponents({
       componentCorePackage: `${Scope}/${Namespace}`,
       directivesProxyFile: `../../${AngularStandaloneLib}/components.ts`,
     }),

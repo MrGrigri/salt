@@ -1,5 +1,11 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
@@ -14,24 +20,11 @@
     "declaration": false,
     "experimentalDecorators": true,
     "moduleResolution": "node",
-    "paths": {
-      "@richkode/salt": ["../salt/dist/"],
-      "@richkode/salt/loader": ["../salt/loader"],
-      "@richkode/salt/components": ["../salt/dist/components"],
-      "@richkode/salt/components/*": ["../salt/dist/components/*"],
-      "@richkode/salt-angular": ["./dist/salt-angular/"],
-      "@richkode/salt-angular-standalone": ["./dist/salt-angular-standalone/"]
-    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"]
   },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  }
+  "extends": ["../../tsconfig.base.json"]
 }

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@richkode/salt": ["./packages/salt/dist/"],
+      "@richkode/salt/components": ["./packages/salt/dist/components"],
+      "@richkode/salt/components/*": ["./packages/salt/dist/components/*"],
+      "@richkode/salt/hydrate/*": ["./packages/salt/hydrate/*"],
+      "@richkode/salt/loader": ["./packages/salt/loader"],
+      "@richkode/salt-angular": ["./packages/angular/dist/salt-angular/"],
+      "@richkode/salt-angular-standalone": [
+        "./packages/angular/dist/salt-angular-standalone/"
+      ]
+    }
+  }
+}
