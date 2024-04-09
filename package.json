@@ -6,7 +6,7 @@
     "packages/angular/projects/salt-angular/",
     "packages/angular/projects/salt-angular-standalone/",
     "packages/salt/",
-    "apps/*"
+    "applications/*"
   ],
   "devDependencies": {
     "@types/node": "^20.12.3",
