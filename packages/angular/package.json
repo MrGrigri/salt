@@ -10,8 +10,7 @@
     "build:salt-angular-standalone": "ng build salt-angular-standalone",
     "build:salt-angular-standalone:prod": "ng build salt-angular-standalone --configuration=production",
     "build:salt-angular-standalone:prod:watch": "ng build salt-angular-standalone --configuration=production --watch",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
