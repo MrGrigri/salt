@@ -1,6 +1,17 @@
 {
-  "cSpell.words": ["fileoverview"],
+  "cSpell.words": ["fileoverview", "packagr"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "html.customData": ["./salt-components.json"]
+  "html.customData": ["./salt-components.json"],
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "**/node_modules",
+    "**/node_modules/**",
+    "node_modules/**",
+    "vscode-extension",
+    ".git/objects",
+    ".vscode",
+    ".vscode-insiders",
+    "**/settings.json"
+  ]
 }

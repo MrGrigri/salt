@@ -4,11 +4,11 @@ A WCAG 2.1 compliant component library.
 
 ## Technologies
 
-### NPM Workspaces
+### Lerna and NPM Workspaces
 
-This repo utilizes [NPM Workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces) and all `package.json` files have a scope to them.
+This repo utilizes [Lerna](https://lerna.js.org/) and [NPM Workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces) and all `package.json` files have a scope to them.
 
-Run `npm -ls -ws` to see the workspaces.
+Run `npm ls -ws` to see the workspaces.
 
 ### Typescript
 

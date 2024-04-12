@@ -3,38 +3,20 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start:angular-web": "ng serve --project angular-web",
     "start:angular-web-standalone": "ng serve --project angular-web-standalone",
-    "build": "ng build",
     "build:salt-angular": "ng build salt-angular",
     "build:salt-angular:prod": "ng build salt-angular --configuration=production",
     "build:salt-angular:prod:watch": "ng build salt-angular --configuration=production --watch",
     "build:salt-angular-standalone": "ng build salt-angular-standalone",
     "build:salt-angular-standalone:prod": "ng build salt-angular-standalone --configuration=production",
     "build:salt-angular-standalone:prod:watch": "ng build salt-angular-standalone --configuration=production --watch",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.3.0",
-    "@angular/common": "^17.3.0",
-    "@angular/compiler": "^17.3.0",
-    "@angular/core": "^17.3.0",
-    "@angular/forms": "^17.3.0",
-    "@angular/platform-browser": "^17.3.0",
-    "@angular/platform-browser-dynamic": "^17.3.0",
-    "@angular/router": "^17.3.0",
-    "@richkode/salt": "^0.0.1",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.14.3"
+    "@richkode/salt": "^0.0.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.3",
-    "@angular/cli": "^17.3.3",
-    "@angular/compiler-cli": "^17.3.0",
-    "ng-packagr": "^17.3.0",
-    "typescript": "~5.4.2"
+    "ng-packagr": "^17.3.0"
   }
 }
