@@ -23,10 +23,12 @@ export class MyComponent {
   @Prop() last: string;
 
   private getText(): string {
-    return format(this.first, this.middle, this.last);
+    const text = format(this.first, this.middle, this.last);
+
+    return text.length > 0 ? text : 'Stencil';
   }
 
   render() {
-    return <div>Hello, World! I am {this.getText()}</div>;
+    return <div>Hello, World! I am {this.getText()}.</div>;
   }
 }
