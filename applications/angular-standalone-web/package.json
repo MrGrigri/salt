@@ -1,0 +1,15 @@
+{
+  "name": "@local/angular-standalone-web",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development"
+  },
+  "private": true,
+  "dependencies": {
+    "@richkode/salt": "^0.0.1",
+    "@richkode/salt-angular": "^0.0.1"
+  }
+}
