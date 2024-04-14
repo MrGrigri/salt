@@ -3,23 +3,25 @@ import { newSpecPage } from '@stencil/core/testing';
 import { MyComponent } from './my-component';
 
 describe('my-component', () => {
-  it('renders', async () => {
+  it('renders with default values', async () => {
     const { root } = await newSpecPage({
       components: [MyComponent],
       template: () => <my-component></my-component>,
     });
     const divElement: HTMLDivElement = root.shadowRoot.querySelector<HTMLDivElement>('div');
 
-    expect(divElement).toBeTruthy();
+    expect(divElement.innerText).toEqual('Hello, World! I am Stencil.');
   });
 
-  it('renders with values', async () => {
+  it('renders with provided values', async () => {
+    const first = 'Stencil';
+    const last = "'Don't call me a framework' JS";
     const { root } = await newSpecPage({
       components: [MyComponent],
-      template: () => <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>,
+      template: () => <my-component first={first} last={last}></my-component>,
     });
     const divElement: HTMLDivElement = root.shadowRoot.querySelector<HTMLDivElement>('div');
 
-    expect(divElement.innerText).toEqual("Hello, World! I am Stencil 'Don't call me a framework' JS");
+    expect(divElement.innerText).toEqual(`Hello, World! I am ${first} ${last}.`);
   });
 });
