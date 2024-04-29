@@ -49,15 +49,15 @@ export declare interface SaltAccordion extends Components.SaltAccordion {
 
 
 @ProxyCmp({
-  inputs: ['exclusive', 'wrap'],
-  methods: ['expand', 'collapse']
+  inputs: ['exclusive'],
+  methods: ['collapseAll', 'expandAll']
 })
 @Component({
   selector: 'salt-accordion-group',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['exclusive', 'wrap'],
+  inputs: ['exclusive'],
 })
 export class SaltAccordionGroup {
   protected el: HTMLElement;

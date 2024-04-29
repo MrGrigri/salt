@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute     | Description                              | Type      | Default |
-| ------------ | ------------- | ---------------------------------------- | --------- | ------- |
-| `isDisabled` | `is-disabled` | Sets the disabled state of the accordion | `boolean` | `false` |
-| `isOpen`     | `is-open`     | Sets the default state of the accordion  | `boolean` | `false` |
+| Property     | Attribute     | Description | Type      | Default |
+| ------------ | ------------- | ----------- | --------- | ------- |
+| `isDisabled` | `is-disabled` |             | `boolean` | `false` |
+| `isOpen`     | `is-open`     |             | `boolean` | `false` |
 
 
 ## Events

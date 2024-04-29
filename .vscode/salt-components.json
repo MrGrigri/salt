@@ -10,11 +10,11 @@
       "attributes": [
         {
           "name": "is-disabled",
-          "description": "Sets the disabled state of the accordion"
+          "description": ""
         },
         {
           "name": "is-open",
-          "description": "Sets the default state of the accordion"
+          "description": ""
         }
       ]
     },
@@ -27,11 +27,7 @@
       "attributes": [
         {
           "name": "exclusive",
-          "description": "If true, the accordion group will act like a radio selection and\nonly allow for one panel to be opened at a time."
-        },
-        {
-          "name": "wrap",
-          "description": "If true, the focus cycle with the arrow up and down keys\nwill wrap to the first or last header."
+          "description": ""
         }
       ]
     },

@@ -27,35 +27,35 @@
 
 ### `setDisabledState(state: boolean) => Promise<boolean>`
 
-
+Sets the disabled state. This should only be used internally. Please do not use this method as an end-developer. Use the `setDisabledState(state: boolean)` method on the HTMLSaltAccordionElement
 
 #### Parameters
 
-| Name    | Type      | Description |
-| ------- | --------- | ----------- |
-| `state` | `boolean` |             |
+| Name    | Type      | Description                               |
+| ------- | --------- | ----------------------------------------- |
+| `state` | `boolean` | - The state to set the disabled state to. |
 
 #### Returns
 
 Type: `Promise<boolean>`
 
-
+- The new disabled state
 
 ### `setOpenState(state: boolean) => Promise<boolean>`
 
-
+Sets the open state. This should only be used internally. Please do not use this method as an end-developer. Use the `setOpenState(state: boolean)` method on the HTMLSaltAccordionElement
 
 #### Parameters
 
-| Name    | Type      | Description |
-| ------- | --------- | ----------- |
-| `state` | `boolean` |             |
+| Name    | Type      | Description                           |
+| ------- | --------- | ------------------------------------- |
+| `state` | `boolean` | - The state to set the open state to. |
 
 #### Returns
 
 Type: `Promise<boolean>`
 
-
+- The new open state
 
 
 ----------------------------------------------

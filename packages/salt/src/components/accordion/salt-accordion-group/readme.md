@@ -35,15 +35,14 @@
 
 ## Properties
 
-| Property    | Attribute   | Description                                                                                                       | Type      | Default |
-| ----------- | ----------- | ----------------------------------------------------------------------------------------------------------------- | --------- | ------- |
-| `exclusive` | `exclusive` | If true, the accordion group will act like a radio selection and only allow for one panel to be opened at a time. | `boolean` | `false` |
-| `wrap`      | `wrap`      | If true, the focus cycle with the arrow up and down keys will wrap to the first or last header.                   | `boolean` | `false` |
+| Property    | Attribute   | Description | Type      | Default |
+| ----------- | ----------- | ----------- | --------- | ------- |
+| `exclusive` | `exclusive` |             | `boolean` | `false` |
 
 
 ## Methods
 
-### `collapse() => Promise<void>`
+### `collapseAll() => Promise<void>`
 
 This will close all of the panels.
 
@@ -53,7 +52,7 @@ Type: `Promise<void>`
 
 
 
-### `expand() => Promise<void>`
+### `expandAll() => Promise<void>`
 
 If `exclusive` is false, then this will open all of the panels.
 
