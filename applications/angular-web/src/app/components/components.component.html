@@ -1,3 +1,19 @@
 <h2>Components</h2>
 
+<nav>
+  <ul>
+    @for (route of routes; track route.link) {
+    <li>
+      <a
+        routerLink="{{ route.link }}"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        {{ route.label }}
+      </a>
+    </li>
+    }
+  </ul>
+</nav>
+
 <router-outlet />

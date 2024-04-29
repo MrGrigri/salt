@@ -2,13 +2,138 @@
 <html dir="ltr" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Stencil Component Starter</title>
 
     <script type="module" src="/build/salt.esm.js"></script>
     <script nomodule src="/build/salt.js"></script>
+
+    <!-- WEB SERVER Does not get bundled in `@richkode/salt` -->
+    <link rel="stylesheet" href="/web-server/main.css" />
+    <script defer src="/web-server/main.js" type="module"></script>
   </head>
   <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <h1>Components</h1>
+
+    <p>
+      This page is only for testing purposes whilst creating a new component. Once the component is
+      created and tested locally, then it must be added into the Angular Standalone Web application.
+    </p>
+
+    <p>
+      <strong>Friendly reminder</strong>: This is only pure HTML and thus cannot pass complex
+      properties via the HTML alone. Use the script tag to interact with the element directly.
+    </p>
+
+    <fieldset>
+      <legend>Controls</legend>
+
+      <fieldset>
+        <legend>Accordion Group</legend>
+
+        <div>
+          <input type="checkbox" id="accordion-group-exclusive" name="setExclusive" />
+          <label for="accordion-group-exclusive">Exclusive</label>
+        </div>
+
+        <menu>
+          <button id="accordion-collapse-all" type="button">Collapse All</button>
+          <button id="accordion-expand-all" type="button">Expand All</button>
+        </menu>
+      </fieldset>
+
+      <hr />
+
+      <fieldset id="accordion-one-select">
+        <legend>Accordion One</legend>
+
+        <div>
+          <input type="checkbox" id="accordion-one-disabled" name="setDisabledState" />
+          <label for="accordion-one-disabled">Disabled</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="accordion-one-open" name="setOpenState" />
+          <label for="accordion-one-open">Open</label>
+        </div>
+      </fieldset>
+
+      <hr />
+
+      <fieldset id="accordion-two-select">
+        <legend>Accordion Two</legend>
+
+        <div>
+          <input type="checkbox" id="accordion-two-disabled" name="setDisabledState" />
+          <label for="accordion-two-disabled">Disabled</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="accordion-two-open" name="setOpenState" />
+          <label for="accordion-two-open">Open</label>
+        </div>
+      </fieldset>
+
+      <hr />
+
+      <fieldset id="accordion-three-select">
+        <legend>Accordion Three</legend>
+
+        <div>
+          <input type="checkbox" id="accordion-three-disabled" name="setDisabledState" />
+          <label for="accordion-three-disabled">Disabled</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="accordion-three-open" name="setOpenState" />
+          <label for="accordion-three-open">Open</label>
+        </div>
+      </fieldset>
+    </fieldset>
+
+    <salt-accordion-group id="accordion-group">
+      <salt-accordion id="accordion-one">
+        <salt-accordion-header id="header-one" controls="panel-one">
+          <span>Option one</span>
+        </salt-accordion-header>
+        <salt-accordion-panel id="panel-one" labelled-by="header-one">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolor sint illo at
+            quaerat mollitia neque dolorem rerum exercitationem nulla expedita praesentium delectus
+            aperiam commodi deserunt unde dignissimos consequatur odit.
+          </p>
+        </salt-accordion-panel>
+      </salt-accordion>
+      <salt-accordion id="accordion-two">
+        <salt-accordion-header id="header-two" controls="panel-two">
+          <span>Option two</span>
+        </salt-accordion-header>
+        <salt-accordion-panel id="panel-two" labelled-by="header-two">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sit quibusdam distinctio
+            minus aut recusandae suscipit, soluta nam illo. Quis id officiis vero sint
+            exercitationem nostrum consequuntur, delectus tempore doloribus?
+          </p>
+        </salt-accordion-panel>
+      </salt-accordion>
+      <salt-accordion id="accordion-three">
+        <salt-accordion-header id="header-three" controls="panel-three">
+          <span>Option three</span>
+        </salt-accordion-header>
+        <salt-accordion-panel id="panel-three" labelled-by="header-three">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem ea corporis
+            veritatis provident deleniti voluptatibus voluptate mollitia saepe? Quod repudiandae,
+            culpa enim ipsum consectetur esse vel sint ipsa laboriosam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rerum aliquam totam
+            at illo odio, eveniet animi quas necessitatibus, fuga corrupti maxime tempore voluptas,
+            consequatur neque saepe placeat vitae error.
+          </p>
+        </salt-accordion-panel>
+      </salt-accordion>
+    </salt-accordion-group>
   </body>
 </html>

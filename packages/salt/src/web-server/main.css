@@ -1,0 +1,68 @@
+@layer salt, index;
+
+@layer index {
+  html {
+    color-scheme: dark light;
+  }
+
+  salt-accordion-group p {
+    margin: 0;
+  }
+
+  svg[icon] {
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+  }
+
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 0;
+    margin-block: 1rem;
+    padding: 1rem 1rem 0.5rem;
+    border: 1px solid ButtonBorder;
+
+    & > div {
+      margin-bottom: 0.5rem;
+
+      &:has(input:disabled) label {
+        color: GrayText;
+        cursor: no-drop;
+      }
+    }
+
+    & > menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+    }
+
+    & > hr {
+      align-self: center;
+      display: block;
+      block-size: 2.5rem;
+      margin: 0 1rem;
+      border: 0;
+      /* border-inline-start: 1px solid ButtonBorder; */
+    }
+
+    & > fieldset {
+      display: block;
+      border: none;
+      padding: 0.5rem 0 0 0;
+      margin: 0;
+
+      & > legend {
+        padding: 0;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  legend {
+    padding-inline: 0.5rem;
+  }
+}

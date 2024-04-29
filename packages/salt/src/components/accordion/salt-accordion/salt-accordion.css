@@ -1,0 +1,12 @@
+@layer salt {
+  :host {
+    display: block;
+  }
+
+  .salt-accordion-container--open {
+    & salt-accordion-panel {
+      --_accordion-size: 1fr;
+      --_accordion-scale: 1;
+    }
+  }
+}

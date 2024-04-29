@@ -1,0 +1,29 @@
+@layer salt {
+  :host {
+    display: block;
+
+    --_accordion-size: 0fr;
+    --_accordion-scale: 0.97;
+    --_accordion-duration: 300ms;
+  }
+
+  .salt-accordion-panel-container {
+    display: grid;
+    grid-template-rows: var(--_accordion-size);
+    scale: var(--_accordion-scale);
+  }
+
+  .salt-accordion-panel-overflow {
+    overflow: hidden;
+  }
+
+  .salt-accordion-panel-wrapper {
+    padding: 0.5rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .salt-accordion-panel-container {
+      transition: all var(--accordion-duration, var(--_accordion-duration)) ease-out;
+    }
+  }
+}

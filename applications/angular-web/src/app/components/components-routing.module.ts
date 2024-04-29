@@ -15,6 +15,11 @@ const routes: Routes = [
             (m) => m.MyComponentModule
           ),
       },
+      {
+        path: 'accordion',
+        loadChildren: () =>
+          import('./accordion/accordion.module').then((m) => m.AccordionModule),
+      },
     ],
   },
 ];

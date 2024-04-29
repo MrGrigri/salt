@@ -1,0 +1,95 @@
+@layer salt {
+  :host {
+    display: block;
+
+    --_accordion-duration: 300ms;
+  }
+
+  .salt-accordion-header-container {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+
+  .salt-accordion-header-container:has([aria-expanded='true']) {
+    & .salt-accordion-header-icon-wrapper {
+      & > * {
+        rotate: 180deg;
+      }
+    }
+  }
+
+  .salt-accordion-header-button {
+    appearance: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    min-block-size: 2.75rem;
+    inline-size: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    font: inherit;
+    font-weight: bolder;
+    border: none;
+    background-color: unset;
+    border-radius: 0;
+
+    &:disabled {
+      cursor: no-drop;
+    }
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus-visible {
+      background-color: rgb(from ButtonFace r g b / 0.16);
+    }
+
+    &:not(:disabled):focus {
+      outline-offset: 0.25rem;
+    }
+
+    &:not(:disabled):active {
+      background-color: rgb(from ButtonFace r g b / 0.24);
+    }
+  }
+
+  .salt-accordion-header-text {
+    text-align: left;
+    flex-grow: 1;
+  }
+
+  .salt-accordion-header-icon-wrapper {
+    &:empty {
+      display: contents;
+    }
+
+    & > * {
+      transition: var(--accordion-duration, var(--_accordion-duration));
+      rotate: 0deg;
+    }
+  }
+
+  .salt-accordion-header-icon {
+    block-size: 1.5rem;
+    inline-size: 1.5rem;
+    aspect-ratio: 1 / 1;
+    fill: currentColor;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .salt-accordion-header-button {
+      &:not(:disabled):hover,
+      &:not(:disabled):focus-visible {
+        background-color: rgb(from ButtonFace r g b / 0.8);
+      }
+
+      &:not(:disabled):active {
+        background-color: rgb(from ButtonFace r g b / 1);
+      }
+    }
+  }
+}

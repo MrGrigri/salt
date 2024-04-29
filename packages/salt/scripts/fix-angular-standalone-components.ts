@@ -1,5 +1,5 @@
 import { Config } from '@stencil/core';
-import { CompilerCtx, OutputTarget } from '@stencil/core/internal';
+import { CompilerCtx, OutputTargetCustom } from '@stencil/core/internal';
 import { resolve } from 'node:path';
 import { promises as fs } from 'node:fs';
 
@@ -21,7 +21,7 @@ const runFixAngularStandaloneComponents = async (options: FixAngularStandaloneCo
   console.log('Imports were rewritten.');
 };
 
-export const _fixAngularStandaloneComponents = (options: FixAngularStandaloneComponentsOptions): OutputTarget => ({
+export const _fixAngularStandaloneComponents = (options: FixAngularStandaloneComponentsOptions): OutputTargetCustom => ({
   name: 'fix-angular-standalone-components',
   type: 'custom',
   generator: async (_config: Config, compilerCtx: CompilerCtx) => {
