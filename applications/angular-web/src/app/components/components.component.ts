@@ -13,8 +13,5 @@ type Routes = Array<Route>;
   styleUrl: './components.component.scss',
 })
 export class ComponentsComponent {
-  routes: Routes = [
-    { link: 'my-component', label: 'MyComponent' },
-    { link: 'accordion', label: 'Accordion' },
-  ];
+  routes: Routes = [{ link: 'accordion', label: 'Accordion' }];
 }

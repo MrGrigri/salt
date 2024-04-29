@@ -7,14 +7,7 @@ const routes: Routes = [
     path: '',
     component: ComponentsComponent,
     children: [
-      { path: '', redirectTo: 'my-component', pathMatch: 'full' },
-      {
-        path: 'my-component',
-        loadChildren: () =>
-          import('./my-component/my-component.module').then(
-            (m) => m.MyComponentModule
-          ),
-      },
+      { path: '', redirectTo: 'accordion', pathMatch: 'full' },
       {
         path: 'accordion',
         loadChildren: () =>
