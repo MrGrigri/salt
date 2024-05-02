@@ -32,7 +32,7 @@ export class AccordionComponent {
     };
   }
 
-  handleDarkModeUpdate(e: Event) {
-    this.#isDarkMode.set((e.target as HTMLInputElement).checked);
+  handleDarkModeUpdate({ target }: Event) {
+    this.#isDarkMode.set((target as HTMLInputElement).checked);
   }
 }
