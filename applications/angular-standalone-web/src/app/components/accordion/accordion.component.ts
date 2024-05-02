@@ -1,4 +1,4 @@
-import { Component, WritableSignal, signal } from '@angular/core';
+import { Component, type WritableSignal, signal } from '@angular/core';
 import {
   SaltAccordion,
   SaltAccordionGroup,
@@ -6,17 +6,15 @@ import {
   SaltAccordionPanel,
 } from '@richkode/salt-angular-standalone';
 
-const componentImports = [
-  SaltAccordion,
-  SaltAccordionGroup,
-  SaltAccordionHeader,
-  SaltAccordionPanel,
-];
-
 @Component({
   selector: 'app-accordion',
   standalone: true,
-  imports: componentImports,
+  imports: [
+    SaltAccordion,
+    SaltAccordionGroup,
+    SaltAccordionHeader,
+    SaltAccordionPanel,
+  ],
   templateUrl: 'accordion.component.html',
   styleUrl: 'accordion.component.scss',
 })

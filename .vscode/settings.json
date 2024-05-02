@@ -14,5 +14,6 @@
     ".vscode-insiders",
     "**/settings.json"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "circleci.persistedProjectSelection": []
 }
