@@ -1,0 +1,74 @@
+<h3>Accordion</h3>
+
+<fieldset class="section">
+  <legend class="section__label">Controls</legend>
+
+  <div class="section__option input">
+    <input
+      id="dark-mode"
+      class="input__control"
+      type="checkbox"
+      (change)="handleDarkModeUpdate($event)"
+    />
+    <label class="input__label" for="dark-mode">Dark Mode</label>
+  </div>
+</fieldset>
+
+<fieldset class="section">
+  <legend class="section__label">Example</legend>
+  <div [class]="darkModeClasses">
+    <salt-accordion-group>
+      <salt-accordion>
+        <salt-accordion-header id="header-one" controls="panel-one"
+          >Accordion one</salt-accordion-header
+        >
+        <salt-accordion-panel id="panel-one" labelledBy="header-one">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            doloribus eum nostrum, minus earum culpa mollitia impedit veritatis
+            architecto dolore facilis fugit ipsum nam, assumenda optio aut
+            quibusdam. Laudantium, incidunt.
+          </p>
+        </salt-accordion-panel>
+      </salt-accordion>
+      <salt-accordion>
+        <salt-accordion-header id="header-two" controls="panel-two"
+          >Accordion two</salt-accordion-header
+        >
+        <salt-accordion-panel id="panel-two" labelledBy="header-two">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit rem, ex quae quidem nostrum quos eaque! Corporis
+            beatae ratione minus labore recusandae illo, sapiente officiis
+            dolorum praesentium. Incidunt, maxime ducimus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+            iure esse atque pariatur possimus necessitatibus rerum ab
+            dignissimos ut cum, eos laborum voluptatem in sunt aspernatur quae
+            tempore? Atque, accusamus!
+          </p>
+        </salt-accordion-panel>
+      </salt-accordion>
+      <salt-accordion>
+        <salt-accordion-header id="header-three" controls="panel-three"
+          >Accordion three</salt-accordion-header
+        >
+        <salt-accordion-panel id="panel-three" labelledBy="header-three">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi in
+            dicta fugit iusto quis sequi fugiat deleniti molestias assumenda
+            recusandae quae ab rem, non tenetur esse magni nemo beatae numquam!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur, recusandae accusantium maiores eaque sapiente
+            laudantium repudiandae eligendi voluptatibus rem sequi ipsum
+            reiciendis voluptatum veritatis commodi iusto enim, error,
+            necessitatibus aperiam.
+          </p>
+        </salt-accordion-panel>
+      </salt-accordion>
+    </salt-accordion-group>
+  </div>
+</fieldset>

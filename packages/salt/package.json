@@ -14,9 +14,21 @@
       "import": "./dist/salt/salt.esm.js",
       "require": "./dist/salt/salt.cjs.js"
     },
-    "./my-component": {
-      "import": "./dist/components/my-component.js",
-      "types": "./dist/components/my-component.d.ts"
+    "./salt-accordion": {
+      "import": "./dist/components/salt-accordion.js",
+      "types": "./dist/components/salt-accordion.d.ts"
+    },
+    "./salt-accordion-header": {
+      "import": "./dist/components/salt-accordion-header.js",
+      "types": "./dist/components/salt-accordion-header.d.ts"
+    },
+    "./salt-accordion-panel": {
+      "import": "./dist/components/salt-accordion-panel.js",
+      "types": "./dist/components/salt-accordion-panel.d.ts"
+    },
+    "./salt-accordion-group": {
+      "import": "./dist/components/salt-accordion-group.js",
+      "types": "./dist/components/salt-accordion-group.d.ts"
     }
   },
   "files": [

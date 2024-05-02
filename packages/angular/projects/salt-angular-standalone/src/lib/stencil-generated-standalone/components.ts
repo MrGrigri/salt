@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Even
 
 import { ProxyCmp, proxyOutputs } from './angular-component-lib/utils';
 
-/* Import rewritten by fixAngularStandaloneComponents */ 
+/* Import rewritten by fixAngularStandaloneComponents */
 import type { Components } from '@richkode/salt';
 
 import { defineCustomElement as defineSaltAccordion } from '@richkode/salt/components/salt-accordion.js';
@@ -34,9 +34,12 @@ export class SaltAccordion {
 }
 
 
-import type { SaltAccordionClose as ISaltAccordionSaltAccordionClose } from '@richkode/salt/components';
-import type { SaltAccordionOpen as ISaltAccordionSaltAccordionOpen } from '@richkode/salt/components';
-import type { SaltAccordionToggle as ISaltAccordionSaltAccordionToggle } from '@richkode/salt/components';
+/* Import rewritten by fixAngularStandaloneComponents */
+import type { SaltAccordionClose as ISaltAccordionSaltAccordionClose } from '@richkode/salt';
+/* Import rewritten by fixAngularStandaloneComponents */
+import type { SaltAccordionOpen as ISaltAccordionSaltAccordionOpen } from '@richkode/salt';
+/* Import rewritten by fixAngularStandaloneComponents */
+import type { SaltAccordionToggle as ISaltAccordionSaltAccordionToggle } from '@richkode/salt';
 
 export declare interface SaltAccordion extends Components.SaltAccordion {
   /**
@@ -102,7 +105,8 @@ export class SaltAccordionHeader {
 }
 
 
-import type { SaltAccordionHeaderClick as ISaltAccordionHeaderSaltAccordionHeaderClick } from '@richkode/salt/components';
+/* Import rewritten by fixAngularStandaloneComponents */
+import type { SaltAccordionHeaderClick as ISaltAccordionHeaderSaltAccordionHeaderClick } from '@richkode/salt';
 
 export declare interface SaltAccordionHeader extends Components.SaltAccordionHeader {
 

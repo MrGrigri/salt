@@ -7,5 +7,17 @@
  * DO NOT use this file to export your components. Instead, use the recommended approaches
  * to consume components of this package as outlined in the `README.md`.
  */
+export { Components } from './components';
 
-export * from './components';
+export type {
+  AccordionCloseEvent,
+  AccordionHeaderClickEvent,
+  AccordionOpenEvent,
+  AccordionToggleEvent,
+  SaltAccordionClose,
+  SaltAccordionHeaderClick,
+  SaltAccordionOpen,
+  SaltAccordionToggle,
+  SaltEvent,
+  SaltEventData,
+} from './types/events.types';

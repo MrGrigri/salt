@@ -31,4 +31,5 @@ export const config: Config = {
     experimentalSlotFixes: true,
     experimentalScopedSlotChanges: true,
   },
+  validatePrimaryPackageOutputTarget: true,
 };
