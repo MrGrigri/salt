@@ -1,0 +1,11 @@
+a {
+  text-decoration: none;
+  color: currentColor;
+
+  &.active {
+    text-decoration: underline;
+    color: activeText;
+    cursor: default;
+    pointer-events: none;
+  }
+}

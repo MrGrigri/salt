@@ -6,12 +6,12 @@ export const componentRoutes: Routes = [
     path: '',
     component: ComponentsComponent,
     children: [
-      { path: '', redirectTo: 'my-component', pathMatch: 'full' },
+      { path: '', redirectTo: 'accordion', pathMatch: 'full' },
       {
-        path: 'my-component',
+        path: 'accordion',
         loadComponent: () =>
-          import('./my-component/my-component.component').then(
-            (m) => m.MyComponentComponent
+          import('./accordion/accordion.component').then(
+            (m) => m.AccordionComponent
           ),
       },
     ],

@@ -2,23 +2,86 @@
   "version": 1.1,
   "tags": [
     {
-      "name": "my-component",
+      "name": "salt-accordion",
       "description": {
         "kind": "markdown",
         "value": ""
       },
       "attributes": [
         {
-          "name": "first",
-          "description": "The first name"
+          "name": "is-disabled",
+          "description": ""
         },
         {
-          "name": "last",
-          "description": "The last name"
+          "name": "is-open",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "salt-accordion-group",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "exclusive",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "salt-accordion-header",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "controls",
+          "description": ""
         },
         {
-          "name": "middle",
-          "description": "The middle name"
+          "name": "icon-position",
+          "description": "",
+          "values": [
+            {
+              "name": "end"
+            },
+            {
+              "name": "start"
+            }
+          ]
+        },
+        {
+          "name": "is-disabled",
+          "description": ""
+        },
+        {
+          "name": "is-open",
+          "description": ""
+        },
+        {
+          "name": "level",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "salt-accordion-panel",
+      "description": {
+        "kind": "markdown",
+        "value": ""
+      },
+      "attributes": [
+        {
+          "name": "is-open",
+          "description": ""
+        },
+        {
+          "name": "labelled-by",
+          "description": ""
         }
       ]
     }

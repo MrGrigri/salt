@@ -7,13 +7,11 @@ const routes: Routes = [
     path: '',
     component: ComponentsComponent,
     children: [
-      { path: '', redirectTo: 'my-component', pathMatch: 'full' },
+      { path: '', redirectTo: 'accordion', pathMatch: 'full' },
       {
-        path: 'my-component',
+        path: 'accordion',
         loadChildren: () =>
-          import('./my-component/my-component.module').then(
-            (m) => m.MyComponentModule
-          ),
+          import('./accordion/accordion.module').then((m) => m.AccordionModule),
       },
     ],
   },

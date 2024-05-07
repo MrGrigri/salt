@@ -1,54 +1,35 @@
-import { angularOutputTarget } from '@stencil/angular-output-target';
 import { Config } from '@stencil/core';
-import { _fixAngularStandaloneComponents } from './scripts/fix-angular-standalone-components';
-
-const Scope = '@richkode';
-const Namespace = 'salt';
-const AngularLib = 'angular/projects/salt-angular/src/lib/stencil-generated';
-const AngularStandaloneLib = 'angular/projects/salt-angular-standalone/src/lib/stencil-generated-standalone';
+import {
+  DistAngularModule,
+  DistAngularStandalone,
+  DistCustomElements,
+  DistFixAngularStandalone,
+  DistOutput,
+  DistReadMe,
+  DistSsr,
+  DistVsCode,
+  DistWebServer,
+} from './stencil-config';
+import { Namespace } from './stencil-config/constants';
 
 export const config: Config = {
   namespace: Namespace,
   outputTargets: [
-    {
-      type: 'dist',
-      esmLoaderPath: '../loader',
-    },
-    {
-      type: 'dist-custom-elements',
-      customElementsExportBehavior: 'auto-define-custom-elements',
-      externalRuntime: false,
-    },
-    {
-      type: 'docs-readme',
-    },
-    {
-      type: 'docs-vscode',
-      file: '../../.vscode/salt-components.json',
-    },
-    {
-      type: 'dist-hydrate-script',
-    },
-    // Angular Module Library
-    angularOutputTarget({
-      componentCorePackage: `${Scope}/${Namespace}`,
-      outputType: 'component',
-      directivesProxyFile: `../${AngularLib}/components.ts`,
-      directivesArrayFile: `../${AngularLib}/index.ts`,
-    }),
-    // Angular Standalone Library
-    angularOutputTarget({
-      componentCorePackage: `${Scope}/${Namespace}`,
-      outputType: 'standalone',
-      directivesProxyFile: `../${AngularStandaloneLib}/components.ts`,
-      directivesArrayFile: `../${AngularStandaloneLib}/index.ts`,
-    }),
-    _fixAngularStandaloneComponents({
-      componentCorePackage: `${Scope}/${Namespace}`,
-      directivesProxyFile: `../../${AngularStandaloneLib}/components.ts`,
-    }),
+    DistOutput,
+    DistCustomElements,
+    DistReadMe,
+    DistVsCode,
+    DistWebServer,
+    DistSsr,
+    DistAngularModule,
+    DistAngularStandalone,
+    DistAngularStandalone,
+    DistFixAngularStandalone,
   ],
-  testing: {
-    browserHeadless: 'new',
+  testing: { browserHeadless: 'new' },
+  extras: {
+    experimentalSlotFixes: true,
+    experimentalScopedSlotChanges: true,
   },
+  validatePrimaryPackageOutputTarget: true,
 };

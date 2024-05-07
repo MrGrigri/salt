@@ -14,9 +14,21 @@
       "import": "./dist/salt/salt.esm.js",
       "require": "./dist/salt/salt.cjs.js"
     },
-    "./my-component": {
-      "import": "./dist/components/my-component.js",
-      "types": "./dist/components/my-component.d.ts"
+    "./salt-accordion": {
+      "import": "./dist/components/salt-accordion.js",
+      "types": "./dist/components/salt-accordion.d.ts"
+    },
+    "./salt-accordion-header": {
+      "import": "./dist/components/salt-accordion-header.js",
+      "types": "./dist/components/salt-accordion-header.d.ts"
+    },
+    "./salt-accordion-panel": {
+      "import": "./dist/components/salt-accordion-panel.js",
+      "types": "./dist/components/salt-accordion-panel.d.ts"
+    },
+    "./salt-accordion-group": {
+      "import": "./dist/components/salt-accordion-group.js",
+      "types": "./dist/components/salt-accordion-group.d.ts"
     }
   },
   "files": [
@@ -28,14 +40,15 @@
     "build": "rm -rf ./dist ./loader && stencil build",
     "build:watch": "stencil build --watch",
     "start": "stencil build --dev --watch --serve",
+    "start:no-open": "stencil build --dev --watch --serve --no-open",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
+    "test:watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
   "devDependencies": {
     "@stencil/angular-output-target": "^0.8.4",
     "@stencil/core": "^4.7.0",
-    "@types/jest": "^29.5.6",
+    "@stencil/store": "^2.0.15",
     "@types/node": "^16.18.11",
     "jest": "^29.7.0",
     "jest-cli": "^29.7.0",

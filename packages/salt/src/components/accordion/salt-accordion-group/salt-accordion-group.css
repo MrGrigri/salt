@@ -1,0 +1,13 @@
+@layer salt {
+  :host {
+    display: block;
+  }
+
+  ::slotted(salt-accordion:first-child) {
+    border-block-start: 1px solid ButtonBorder;
+  }
+
+  ::slotted(salt-accordion) {
+    border-block-end: 1px solid ButtonBorder;
+  }
+}

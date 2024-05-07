@@ -32,8 +32,7 @@
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.3",
     "babel-jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
     "lerna": "^8.1.2",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   }
 }
